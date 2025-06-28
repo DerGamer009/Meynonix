@@ -1,0 +1,16 @@
+name: Meynonix
+version: 1.0.0
+main: de.dergamer09.Main
+api: 1.1.0
+author: DerGamer09
+
+commands:
+  day:
+    description: Setzt die Tageszeit auf Tag
+    usage: /day
+  night:
+    description: Setzt die Tageszeit auf Nacht
+    usage: /night
+  heal:
+    description: Heilt den Spieler
+    usage: /heal
