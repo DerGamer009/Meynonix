@@ -1,5 +1,5 @@
 name: Meynonix
-version: 1.0.0
+version: 1.0.1-SNAPSHOT
 main: de.dergamer09.Main
 api: 1.1.0
 author: DerGamer09
@@ -14,3 +14,6 @@ commands:
   heal:
     description: Heilt den Spieler
     usage: /heal
+  maintenance:
+    description: Schaltet den Wartungsmodus ein oder aus
+    usage: /maintenance <on|off>
