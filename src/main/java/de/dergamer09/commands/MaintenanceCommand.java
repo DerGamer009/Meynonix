@@ -13,24 +13,24 @@ public class MaintenanceCommand extends Command {
         super("maintenance");
         this.plugin = plugin;
         this.setDescription("Schaltet den Wartungsmodus ein oder aus");
-        this.setUsage("/maintenance <on|off>");
+        this.setUsage("/maintenance <on|off|an|aus>");
     }
 
     @Override
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage(TextFormat.RED + "Benutze /maintenance <on|off>");
+            sender.sendMessage(TextFormat.RED + "Benutze /maintenance <on|off|an|aus>");
             return false;
         }
 
         String arg = args[0].toLowerCase();
         boolean state;
-        if ("on".equals(arg)) {
+        if ("on".equals(arg) || "an".equals(arg)) {
             state = true;
-        } else if ("off".equals(arg)) {
+        } else if ("off".equals(arg) || "aus".equals(arg)) {
             state = false;
         } else {
-            sender.sendMessage(TextFormat.RED + "Benutze /maintenance <on|off>");
+            sender.sendMessage(TextFormat.RED + "Benutze /maintenance <on|off|an|aus>");
             return false;
         }
 

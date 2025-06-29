@@ -16,4 +16,4 @@ commands:
     usage: /heal
   maintenance:
     description: Schaltet den Wartungsmodus ein oder aus
-    usage: /maintenance <on|off>
+    usage: /maintenance <on|off|an|aus>
